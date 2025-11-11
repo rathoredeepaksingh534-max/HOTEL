@@ -1,0 +1,254 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0c0a07;
+  color: #fdfbf7;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.rajasthan-header {
+  background: linear-gradient(90deg, #1a1209, #2a1d0f);
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid gold;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.rajasthan-header h1 {
+  font-family: 'Cinzel', serif;
+  color: gold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.rajasthan-header span {
+  color: #fff;
+}
+
+.back-home {
+  color: gold;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.back-home:hover {
+  color: #fff;
+}
+
+/* HERO SECTION */
+.rajasthan-hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%) contrast(115%) saturate(120%);
+  z-index: 0;
+}
+
+.rajasthan-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fdfbf7;
+  max-width: 700px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero-text h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  color: gold;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px rgba(255,215,0,0.6);
+}
+
+.hero-text p {
+  color: #eee;
+  margin-bottom: 25px;
+  font-size: 1.15rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.hero-btn {
+  background: linear-gradient(90deg, gold, #f7e17b);
+  color: #000;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(255,215,0,0.3);
+}
+
+.hero-btn:hover {
+  background: #fff8c6;
+  transform: scale(1.05);
+}
+
+/* HERITAGE */
+.rajasthan-history {
+  padding: 80px 15%;
+  text-align: center;
+  background: linear-gradient(180deg, #1b140b, #0c0a07);
+}
+
+.rajasthan-history h2 {
+  color: gold;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.rajasthan-history p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+.rajasthan-gallery {
+  padding: 80px 10%;
+  text-align: center;
+  background: #14100a;
+}
+
+.rajasthan-gallery h2 {
+  color: gold;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid gold;
+  transition: 0.4s;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.img-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 215, 0, 0.1);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.img-box:hover img {
+  transform: scale(1.08);
+}
+
+.img-box:hover::after {
+  opacity: 1;
+}
+
+/* EXPERIENCE */
+.rajasthan-experience {
+  background: linear-gradient(180deg, #2b1d10, #0a0805);
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.rajasthan-experience h2 {
+  color: gold;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.rajasthan-experience p {
+  color: #ddd;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+}
+
+.book-btn {
+  background: linear-gradient(90deg, gold, #f7e17b);
+  color: #000;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 0 25px rgba(255,215,0,0.3);
+}
+
+.book-btn:hover {
+  transform: scale(1.07);
+  background: #fff6b3;
+}
+
+/* FOOTER */
+.rajasthan-footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid gold;
+  background: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(40px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .rajasthan-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .rajasthan-history, .rajasthan-gallery, .rajasthan-experience {
+    padding: 60px 5%;
+  }
+}
+
+
+
+
+

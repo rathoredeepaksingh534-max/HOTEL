@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | XYZ Hotel</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/4d9d7f3f7f.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="lux-header">
+    <div class="logo">
+      <div class="logo-icon">X</div>
+      <h1>XYZ <span>HOTEL</span></h1>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </header>
+
+  <!-- HERO -->
+  <section class="gallery-hero ">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Luxury in Every Detail</h2>
+      <p>Where every corner whispers elegance and timeless comfort awaits.</p>
+    </div>
+  </section>
+
+  <!-- BACK TO HOME BUTTON -->
+<div class="back-home ">
+  <a href="index.html" class="back-home-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back to Home
+  </a>
+</div>
+
+  <!-- GALLERY -->
+  <main>
+    <section class="gallery-section ">
+      <h3 class="gallery-subtitle">Grand Interiors</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Lobby"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80" alt="Suite"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80" alt="Corridor"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section ">
+      <h3 class="gallery-subtitle">Exteriors & Architecture</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80" alt="Front View"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Courtyard"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?auto=format&fit=crop&w=1200&q=80" alt="Night Lighting"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section ">
+      <h3 class="gallery-subtitle">Fine Dining & Bar</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1200&q=80" alt="Cocktail Bar"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" alt="Restaurant"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1200&q=80" alt="Luxury Dining"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img src="" alt="Full View" id="lightbox-img" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>ABOUT US</h3>
+        <p>
+          XYZ Hotel offers a world-class luxury experience with golden elegance,
+          unmatched comfort, and impeccable hospitality that defines timeless luxury.
+        </p>
+      </div>
+
+      <div class="footer-connect">
+        <h3>CONNECT WITH US</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="footer-address">
+          123 Royal Street, Cityville 99999<br>
+          +91 99999 99999<br>
+          <a href="mailto:contact@xyzhotel.com">contact@xyzhotel.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 XYZ Hotel | Crafted with Luxury & Passion ✨</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" title="Go to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JS -->
+  <script src="gallery.js"></script>
+</body>
+</html>
+

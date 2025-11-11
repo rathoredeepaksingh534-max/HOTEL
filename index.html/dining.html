@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYZ Royal Dining</title>
+  <link rel="stylesheet" href="dining.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Back to Home Button -->
+<a href="index.html" class="back-btn">
+  <i class="fa-solid fa-arrow-left"></i> Back to Home
+</a>
+
+
+  <!-- ENTRANCE ANIMATION -->
+  <div id="intro">
+    <div class="intro-logo">XYZ</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">XYZ</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#bar">Bar</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#reserve">Reserve</a>
+      <a href="about.html" class="about-btn">About</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to XYZ Royal Dining</h1>
+      <p>“A Culinary Experience Beyond Royalty.”</p>
+      <button class="btn" onclick="scrollToSection('reserve')">Reserve Now</button>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+    <h2>Royal Menu</h2>
+    <p>Every dish is crafted as an artistic tribute to timeless luxury.</p>
+
+    <!-- Starters -->
+    <h3 class="menu-category">Starters</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="Royal Platter">
+        <div class="menu-info">
+          <h4>Maharaja Platter <span class="price">₹1200</span></h4>
+          <p>Finest Indian delicacies curated with royal flair.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Golden Soup">
+        <div class="menu-info">
+          <h4>Golden Soup <span class="price">₹650</span></h4>
+          <p>Exquisite creamy soup with saffron and truffle essence.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Courses -->
+    <h3 class="menu-category">Main Courses</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+       <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Truffle Risotto">
+        <div class="menu-info">
+          <h4>Golden Truffle Risotto <span class="price">₹1800</span></h4>
+          <p>Italian luxury infused with heritage and elegance.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Royal Lamb">
+        <div class="menu-info">
+          <h4>Royal Lamb Shank <span class="price">₹2200</span></h4>
+          <p>Slow-cooked lamb with saffron-infused jus and herbs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <h3 class="menu-category">Desserts</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Royal Dessert">
+        <div class="menu-info">
+          <h4>Royal Dessert Symphony <span class="price">₹900</span></h4>
+          <p>Sweet artistry inspired by the grandeur of kings.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+       <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Golden Cheesecake">
+        <div class="menu-info">
+          <h4>Golden Cheesecake <span class="price">₹850</span></h4>
+          <p>Creamy cheesecake with edible gold flakes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <h3 class="menu-category">Beverages</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Royal Cocktail">
+        <div class="menu-info">
+          <h4>Royal Cocktail <span class="price">₹750</span></h4>
+          <p>Handcrafted cocktail with exotic ingredients.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b"alt="Vintage Wine">
+        <div class="menu-info">
+          <h4>Vintage Wine Selection <span class="price">₹1500</span></h4>
+          <p>Curated selection of the finest aged wines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAR -->
+  <section id="bar" class="bar-section">
+    <div class="bar-text">
+      <h2>The Royal Bar</h2>
+      <p>Handcrafted cocktails, vintage wines, and rare spirits served in timeless style.</p>
+      <button class="btn-outline">View Bar Menu</button>
+    </div>
+    <div class="bar-image">
+     <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b"alt="Luxury Black & Gold Bar Menu" class="bar‑menu‑image" />
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <h2>Voices of Distinction</h2>
+    <div class="review-slider">
+      <div class="review active">“An experience of divine elegance — every bite felt royal.”</div>
+      <div class="review">“A place where luxury and flavor meet perfection.”</div>
+      <div class="review">“Service, ambiance, and cuisine — truly world-class.”</div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reserve" class="reserve">
+    <h2>Reserve Your Experience</h2>
+    <form id="reservationForm" action="https://formspree.io/f/xovyaelp" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <div class="form-row">
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+      </div>
+      <input type="number" name="guests" placeholder="Guests" min="1" required>
+      <textarea name="message" placeholder="Special Requests"></textarea>
+      <button type="submit" class="btn">Submit Reservation</button>
+    </form>
+    <div id="thankYou" class="thank-you" style="display:none;">
+      <h3>✨ Thank You! ✨</h3>
+      <p>Your royal table awaits at XYZ.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+   <!-- ================= FOOTER ================= -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>ABOUT US</h3>
+        <p>
+          XYZ Hotel is a world-class luxury destination offering timeless comfort,
+          refined experiences, and impeccable hospitality.
+          Nestled in the heart of the city, we redefine elegance and relaxation for every guest.
+        </p>
+      </div>
+
+      <!-- Connect Section -->
+      <div class="footer-connect">
+        <h3>CONNECT WITH US</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="footer-address">
+          123 Royal Street, Cityville 99999<br>
+          +91 99999 99999<br>
+          <a href="mailto:contact@xyzhotel.com">contact@xyzhotel.com</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 XYZ Hotel. All Rights Reserved.</p>
+    </div>
+  
+
+  <script>
+    // Smooth scroll to section
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Handle reservation form submission
+    const form = document.getElementById('reservationForm');
+    const thankYou = document.getElementById('thankYou');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      } else {
+        alert('Oops! There was a problem submitting your reservation.');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYZ Hotel | Luxury Stay</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="loader-content">
+    <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="Hotel Logo" class="loader-logo">
+    <h1 class="loader-name">XYZ <span>HOTEL</span></h1>
+  </div>
+</div>
+
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header>
+    <div class="nav-container">
+
+      <!-- Left Navigation -->
+      <ul class="nav-links left">
+      <li><a href="our-inn.html">OUR INN</a></li>
+
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="dining.html">DINING</a></li>
+
+      </ul>
+
+      <!-- Center Logo -->
+      <div class="logo">
+        <div class="logo-icon">X</div>
+        <h1>XYZ <span>HOTEL</span></h1>
+      </div>
+
+      <!-- Right Navigation -->
+      <ul class="nav-links right">
+     <li><a href="rajasthan.html">RAJASTHAN</a></li>
+       <li class="book-now">
+  <a href="booking.html"><span class="icon">&#8635;</span> BOOK NOW</a>
+</li>
+
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Decorative Gold Border -->
+    <div class="gold-border"></div>
+  </header>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to <span>XYZ Hotel</span></h1>
+      <p>Experience timeless luxury and unforgettable comfort</p>
+     <a href="booking.html" class="hero-btn">Book Your Stay</a>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="about fade-next">
+    <div class="about-key">
+      <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="key icon">
+    </div>
+
+    <div class="about-container">
+      <p class="about-subtitle">XYZ HOTEL</p>
+      <h2 class="about-title">CAREFULLY CURATED, ALWAYS INSPIRING</h2>
+      <div class="about-line"></div>
+      <p class="about-text">
+        A distinctive luxury hotel for sophisticated travelers, XYZ Hotel offers guests a nuanced experience while visiting one of the world’s most inspiring destinations.
+        Here, timeless elegance meets modern comfort with authentic hospitality and extraordinary attention to detail,
+        ensuring every stay feels effortlessly special.
+      </p>
+      <a href="about.html" class="about-btn">READ MORE</a>
+
+    </div>
+  </section>
+
+
+  <!-- ================= LUXURY SLIDER SECTION ================= -->
+  <section id="lux-slider" class="lux-slider" aria-roledescription="carousel">
+    <div class="slides" role="list">
+
+
+       <!-- Slide 1 -->
+      <article class="slide" role="listitem">
+        <div class="slide-inner reverse">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80" alt="Outdoor Lounge">
+            <div class="gold-corners"></div>
+          </div>
+          <div class="slide-content">
+            <h5>MEETINGS & EVENTS</h5>
+            <h2>DESIGNED FOR WARM CONVERSATIONS</h2>
+            <p>Inspired by the city’s European charm, XYZ Hotel offers an elegant sanctuary for memorable gatherings and refined hospitality.</p>
+          
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 2 -->
+      <article class="slide" role="listitem">
+        <div class="slide-inner">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1200&q=80" alt="Cocktail Bar">
+            <div class="gold-corners"></div>
+          </div>
+          <div class="slide-content">
+            <h5>DELIGHT IN EVERY BITE</h5>
+            <h2>COCKTAIL CORNER</h2>
+            <p>Treat yourself to a flavorful cocktail or order your favorite spirit on the rocks at our charming lobby bar.</p>
+            
+          </div>
+        </div>
+      </article>
+
+      
+
+      <!-- Slide 3 -->
+      <article class="slide" role="listitem">
+        <div class="slide-inner">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80" alt="Fine Dining">
+            <div class="gold-corners"></div>
+          </div>
+          <div class="slide-content">
+            <h5>EXPERIENCE ELEGANCE</h5>
+            <h2>FINE DINING & AMBIENCE</h2>
+            <p>Savor gourmet cuisine prepared by expert chefs, served with impeccable style in our candle-lit luxury dining spaces.</p>
+           
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+      <button class="prev" aria-label="Previous slide">←</button>
+      <button class="next" aria-label="Next slide">→</button>
+    </div>
+  </section>
+
+
+  <!-- ================= CORDIAL INVITE SECTION ================= -->
+  <section class="cordial-section fade-next">
+    <div class="cordial-container">
+
+      <!-- Left Text -->
+      <div class="cordial-text">
+        <h2>YOU’RE<br><span>CORDIALLY INVITED</span></h2>
+        <p class="cordial-handle"><i class="fa-brands fa-instagram"></i> @xyzluxuryhotel</p>
+      </div>
+
+      <!-- Center Circle Image -->
+      <div class="cordial-center">
+        <div class="cordial-ring">
+          <div class="cordial-emblem">
+            <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="Lion emblem">
+          </div>
+          <div class="cordial-circle">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Guests">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Gallery -->
+      <div class="cordial-gallery">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Luxury Room">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="City View">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Lounge">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= ROOMS & SUITES SECTION ================= -->
+  <section class="rooms">
+    <h2 class="section-title fade-title">Our Rooms & Suites</h2>
+    <p class="section-subtitle fade-title">Experience comfort and elegance beyond expectations</p>
+
+    <div class="room-cards">
+
+      <!-- Room 1 -->
+      <div class="room-card fade-up">
+        <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="room-content">
+          <h3>Presidential Suite</h3>
+          <p>Lavish comfort with panoramic views, private lounge, and royal interiors.</p>
+         <a href="gallery.html" class="room-btn">View Details</a>
+
+        </div>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="room-card fade-up">
+        <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="room-content">
+          <h3>Deluxe King Room</h3>
+          <p>Elegant design with marble bath and premium city views for a relaxing stay.</p>
+        <a href="gallery.html" class="room-btn">View Details</a>
+
+        </div>
+      </div>
+
+      <!-- Room 3 -->
+      <div class="room-card fade-up">
+        <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="room-content">
+          <h3>Signature Suite</h3>
+          <p>Spacious luxury suite with private balcony, fine furnishings, and ambient lighting.</p>
+        <a href="gallery.html" class="room-btn">View Details</a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>ABOUT US</h3>
+        <p>
+          XYZ Hotel is a world-class luxury destination offering timeless comfort,
+          refined experiences, and impeccable hospitality.
+          Nestled in the heart of the city, we redefine elegance and relaxation for every guest.
+        </p>
+      </div>
+
+      <!-- Connect Section -->
+      <div class="footer-connect">
+        <h3>CONNECT WITH US</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="footer-address">
+          123 Royal Street, Cityville 99999<br>
+          +91 99999 99999<br>
+          <a href="mailto:contact@xyzhotel.com">contact@xyzhotel.com</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 XYZ Hotel. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="script.js"></script>
+</body>
+</html>

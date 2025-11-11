@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book Your Stay | XYZ Hotel</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d9d7f3f7f.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preload-text"><span>X</span>YZ <em>HOTEL</em></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="booking-header">
+    <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back Home</a>
+    <h1><span>XYZ</span> HOTEL</h1>
+  </header>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking-royal">
+    <div class="booking-left">
+      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1600&q=80" alt="Luxury Suite">
+      <div class="gold-glow"></div>
+    </div>
+
+    <div class="booking-right ">
+      <h2>Reserve Your Royal Stay</h2>
+      <p>Indulge in timeless elegance and bespoke comfort.</p>
+
+      <form class="booking-form" onsubmit="return handleBooking(event)">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" required placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" required placeholder="example@email.com">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check-In</label>
+            <input id="checkin" type="date" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-Out</label>
+            <input id="checkout" type="date" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Guests</label>
+            <select id="guests" required>
+              <option value="">Select</option>
+              <option>1 Guest</option><option>2 Guests</option>
+              <option>3 Guests</option><option>4 + Guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="room">Room Type</label>
+            <select id="room" required>
+              <option value="">Select</option>
+              <option>Deluxe Room</option>
+              <option>Signature Suite</option>
+              <option>Presidential Suite</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="book-btn" type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SUCCESS POPUP -->
+  <div class="booking-success" id="successMessage">
+    <div class="success-box ">
+      <i class="fa-solid fa-circle-check"></i>
+      <h3>Booking Confirmed!</h3>
+      <p>Thank you for choosing XYZ Hotel.<br>We look forward to your arrival.</p>
+      <a href="index.html" class="home-btn">Back to Home</a>
+    </div>
+  </div>
+
+
+  
+  <!-- ================= FOOTER ================= -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>ABOUT US</h3>
+        <p>
+          XYZ Hotel is a world-class luxury destination offering timeless comfort,
+          refined experiences, and impeccable hospitality.
+          Nestled in the heart of the city, we redefine elegance and relaxation for every guest.
+        </p>
+      </div>
+
+      <!-- Connect Section -->
+      <div class="footer-connect">
+        <h3>CONNECT WITH US</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="footer-address">
+          123 Royal Street, Cityville 99999<br>
+          +91 99999 99999<br>
+          <a href="mailto:contact@xyzhotel.com">contact@xyzhotel.com</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 XYZ Hotel. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>
+
